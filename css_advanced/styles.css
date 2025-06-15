@@ -1,0 +1,334 @@
+/* ========================
+   GENERAL STYLES
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ========================
+   HEADER / NAVIGATION
+========================= */
+header {
+  background-color: absolute;
+  padding: 20px 40px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ========================
+   HERO SECTION
+========================= */
+main section:first-of-type {
+  background: linear-gradient(rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5)), url('images/Object.png') no-repeat center center/cover;
+  min-height: 100vh;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 180px 20px 120px;
+  background-size: cover;
+}
+
+main h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+main span {
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+}
+
+main button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  background-color: #C271FF;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* ========================
+   PROFILES SECTION
+========================= */
+main section:first-of-type > div:nth-of-type(2) {
+  margin-top: 100px;
+}
+
+main section:first-of-type h2 {
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+main section:first-of-type > div:nth-of-type(2) > div > div {
+  text-align: center;
+  max-width: 150px;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 50px 20px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  max-width: 200px;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* ========================
+   TESTIMONIAL SECTION
+========================= */
+main section:nth-of-type(2) {
+  background-color: #a168f2;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* ========================
+   POPULAR TUTORIALS SECTION
+========================= */
+main section:nth-of-type(3) {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+main section:nth-of-type(3) h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 400;
+}
+
+main section:nth-of-type(3) h2 span {
+  color: #a168f2;
+  font-weight: 700;
+}
+
+main section:nth-of-type(3) > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+main section:nth-of-type(3) > div > div {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 10px;
+  text-align: left;
+  position: relative;
+}
+
+main section:nth-of-type(3) > div > div img:first-of-type {
+  width: 20;
+  height auto;
+  border-radius: 10px;
+}
+
+main section:nth-of-type(3) h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 12px 0 6px;
+}
+
+main section:nth-of-type(3) p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+main section:nth-of-type(3) .tutorial-author {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+main section:nth-of-type(3) .tutorial-author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+main section:nth-of-type(3) .tutorial-author h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #a168f2;
+  margin: 0;
+}
+
+main section:nth-of-type(3) .tutorial-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+
+main section:nth-of-type(3) .tutorial-rating i {
+  color: #a168f2;
+  margin-right: 3px;
+}
+
+main section:nth-of-type(3) > div > div::before {
+  content: "\f04b";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: white;
+  background-color: rgba(161, 104, 242, 0.8);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 18px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* ========================
+   MEMBERSHIP SECTION
+========================= */
+main section:nth-of-type(4) {
+  background-color: #071629;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+main section:nth-of-type(4) div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+main section:nth-of-type(4) img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+main section:nth-of-type(4) button {
+  background-color: #a168f2;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+/* ========================
+   FAQ SECTION
+========================= */
+main section:nth-of-type(5) {
+  background-color: #fff;
+  padding: 50px 20px;
+}
+
+main section:nth-of-type(5) > div {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+main section:nth-of-type(5) h3 {
+  font-size: 1.2rem;
+  margin: 15px 0 10px;
+}
+
+/* ========================
+   FOOTER SECTION
+========================= */
+footer {
+  background-color: #071629;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer i {
+  font-size: 1.2rem;
+  margin: 0 10px;
+  color: white;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
