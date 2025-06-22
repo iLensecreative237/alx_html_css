@@ -33,7 +33,29 @@ img{
 ul{
     list-style: none;
 }
+section{
+    padding: 8rem 0;
+}
 /* === UTILITIES */
+.card{
+    text-align: center;
+    cursor: pointer;
+}
+.card__img{
+    width: 5rem;
+    height:5rem ;
+    margin: auto;
+}
+.card__title{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    font-weight: 600;
+    color: var(--scondary-color);
+}
+.card__desc{
+    font-size: 1.4rem;
+    color: var(--scondary-color);
+}
 .container{
     max-width: 900px;
     width: 90%;
@@ -50,7 +72,39 @@ ul{
     background-color: var(--primary-color);
 
 }
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-col{
+    flex: 0 0 20rem;
+    justify-self: center;
+}
+
+.section__header{
+max-width: 65rem;
+text-align: center;
+margin: 0 auto 7rem auto;
+color: var(--scondary-color);
+}
+.section__header h2{
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.section__header p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+
+
 /* ===END OF UTILITIES */
+
+
+
+
 /* === HEADER STYLES === */
 .header{
     min-height: 100vh;
